@@ -1,0 +1,29 @@
+{
+	"C++ Input-Output": {
+		"prefix": "iocpp",
+		"body": [
+			"#include \"bits/stdc++.h\"",
+			"using namespace std;",
+			"#define int long long int",
+			"#define IOS ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);",
+			"#define br \"\\n\"",
+			"void local();",
+			"",
+			"signed main(){",
+			"    IOS;",
+			"    local();",
+			"",
+			"    return 0;",
+			"}",
+			"",
+			"void local(){",
+			"    #ifndef ONLINE_JUDGE ",
+			"        freopen(\"txt/input.txt\", \"r\", stdin);",
+			"        freopen(\"txt/output.txt\", \"w\", stdout);",
+			"        freopen(\"txt/Error.txt\", \"w\", stderr);",
+			"    #endif",
+			"}"
+		],
+		"description": "C++ Input-Output"
+	}
+}

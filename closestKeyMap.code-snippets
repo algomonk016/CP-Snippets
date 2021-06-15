@@ -1,0 +1,16 @@
+{
+	"closest": {
+		"prefix": "closestKeyMap",
+		"body": [
+		  "int closest(int n){",
+		  "    auto upper = mp.upper_bound(n);",
+		  "    auto lower = mp.lower_bound(n);",
+		  "    lower--;",
+		  "    if(mp.find(lower->first)==mp.end()) return upper->first;",
+		  "    if(mp.find(upper->first) == mp.end()) return lower->first;",
+		  "    return abs(upper->first - n) < abs(n- lower->first) ? upper->first : lower->first;  ",
+		  "}"
+		],
+		"description": "closest"
+	  }
+}
